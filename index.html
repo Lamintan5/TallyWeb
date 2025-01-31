@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" id="favicon" href="https://tally.studio5ive.org/logo/ic_launcher.png" type="image/x-icon">
+    <title>Tally</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="" class="nav_logo">
+                        <div class="nav__logo"></div>
+                        <div class="nav_title">TallyApp</div>
+                    </a>
+    
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li><a href="#index" class="plain">Home</a></li>
+                            <!-- SERVICES -->
+                            <li class="dropdown__item">
+                                <div class="nav__link dropdown__button">
+                                    Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                                </div>
+    
+                                <div class="dropdown__container">
+                                    <div class="dropdown__content">
+                                        <div class="dropdown__group">
+                                            <div class="dropdown__icon">
+                                                <img src="../icons/products/software.png" alt="">
+                                            </div>
+        
+                                            <span class="dropdown__title">Software</span>
+        
+                                            <ul class="dropdown__list">
+                                                <li><a href="products/software.html#solutions" class="dropdown__link">Mobile App Development</a></li>
+                                                <li><a href="products/software.html#solutions" class="dropdown__link">Website Development</a></li>
+                                                <li><a href="products/software.html#solutions" class="dropdown__link">Desktop App Development</a></li>
+                                                <li><a href="products/software.html#solutions" class="dropdown__link">Cross-Platform Development</a></li>
+                                                <li><a href="products/software.html#solutions" class="dropdown__link">Custom Software Solutions</a></li>
+                                                <li><a href="products/software.html#solutions" class="dropdown__link">+ more</a></li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="dropdown__group">
+                                            <div class="dropdown__icon">
+                                                <img src="../icons/products/ai.png" alt="">
+                                            </div>
+        
+                                            <span class="dropdown__title">AI</span>
+        
+                                            <ul class="dropdown__list">
+                                                <li><a href="products/ai.html#solutions" class="dropdown__link">Chatbots</a></li>
+                                                <li><a href="products/ai.html#solutions" class="dropdown__link">Speech Recognition</a></li>
+                                                <li><a href="products/ai.html#solutions" class="dropdown__link">Computer Vision</a></li>
+                                                <li><a href="products/ai.html#solutions" class="dropdown__link">Text-to-speech and <br>Speech-to-text</a></li>
+                                                <li><a href="products/ai.html#solutions" class="dropdown__link">Generative AI</a></li>
+                                                <li><a href="products/ai.html#solutions" class="dropdown__link">+ more</a></li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="dropdown__group">
+                                            <div class="dropdown__icon">
+                                                <img src="../icons/products/architecture.png" alt="">
+                                            </div>
+        
+                                            <span class="dropdown__title">Architecture</span>
+        
+                                            <ul class="dropdown__list">
+                                                <li><a href="products/architecture.html#solutions" class="dropdown__link">Architectural Design</a></li>
+                                                <li><a href="products/architecture.html#solutions" class="dropdown__link">3D Modeling and Rendering</a></li>
+                                                <li><a href="products/architecture.html#solutions" class="dropdown__link">Interior Design</a></li>
+                                                <li><a href="products/architecture.html#solutions" class="dropdown__link">Exterior Design</a></li>
+                                                <li><a href="products/architecture.html#solutions" class="dropdown__link">Architectural Visualization</a></li>
+                                                <li><a href="products/architecture.html#solutions" class="dropdown__link">+ more</a></li>
+                                            </ul>
+                                        </div>
+    
+                                        <div class="dropdown__group">
+                                            <div class="dropdown__icon">
+                                                <img src="../icons/products/animation.png" alt="">
+                                            </div>
+        
+                                            <span class="dropdown__title">Animation</span>
+        
+                                            <ul class="dropdown__list">
+                                                <li><a href="products/animation.html#solutions" class="dropdown__link">2D Animation</a></li>
+                                                <li><a href="products/animation.html#solutions" class="dropdown__link">3D Animation</a></li>
+                                                <li><a href="products/animation.html#solutions" class="dropdown__link">Music Video</a></li>
+                                                <li><a href="products/animation.html#solutions" class="dropdown__link">Advertisement Animation</a></li>
+                                                <li><a href="products/animation.html#solutions" class="dropdown__link">Animated Explainers</a></li>
+                                                <li><a href="products/animation.html#solutions" class="dropdown__link">+ more</a></li>
+                                            </ul>
+                                        </div>
+    
+                                        <div class="dropdown__group">
+                                            <div class="dropdown__icon">
+                                                <img src="../icons/products/game.png" alt="">
+                                            </div>
+        
+                                            <span class="dropdown__title">Video Game</span>
+        
+                                            <ul class="dropdown__list">
+                                                <li><a href="products/game.html#solutions" class="dropdown__link">PC Games</a></li>
+                                                <li><a href="products/game.html#solutions" class="dropdown__link">Mobile Games</a></li>
+                                                <li><a href="products/game.html#solutions" class="dropdown__link">Concole Games</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#about" class="plain">About</a></li>
+                            <!-- CONTACT US -->
+                            <li class="dropdown__item">                      
+                                <div class="nav__link dropdown__button">
+                                    Contact<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                                </div>
+    
+                                <div class="dropdown__container" >
+                                    <div class="dropdown__content" style="max-width: 1118px;">
+                                        <div class="dropdown__group">
+                                            <div class="clmn-footer">
+                                                <div class="row">
+                                                    <img src="images/5logo_black.png" alt="" class="logo2">
+                                                        <h3 class="text"  style="color: black;">STUDIO5IVE</h3>
+                                                </div>    
+                                                <div class="iconrow">
+                                                    <img src="icons/fb.svg" alt="" class="sicon" style="background-color: black;  border-radius: 50px; padding: 2px;">
+                                                    <img src="icons/X.svg" alt="" class="sicon" style="background-color: black;  border-radius: 50px; padding: 2px;">
+                                                    <img src="icons/IG.svg" alt="" class="sicon" style="background-color: black;  border-radius: 50px; padding: 2px;">
+                                                    <img src="icons/link.svg" alt="" class="sicon" style="background-color: black;  border-radius: 50px; padding: 2px;">
+                                                </div>
+                                            </div> 
+                                        </div>
+        
+                                        <div class="dropdown__group">
+                                            <div class="contactInfo">
+                                                <a class="box" href="mailto:info@studio5ive.org">
+                                                    <div class="icon" style="background-color: rgb(63, 63, 63, 0.1);"><i class="fas fa-envelope"></i></div>
+                                                    <div class="text">
+                                                        <h3 style="color: black;">Email</h3>
+                                                        <p style="color: black;">info@studio5ive.org</p>
+                                                    </div>
+                                                </a>
+                                                <a class="box" href="tel:+254706751272">
+                                                    <div class="icon" style="background-color: rgb(63, 63, 63, 0.1);"><i class="fas fa-phone"></i></div>
+                                                    <div class="text">
+                                                        <h3 style="color: black;">Phone</h3>
+                                                        <p class="contact-phone" style="color: black;">+16592702766</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="dropdown__group">
+                                            <div class="contactForm">
+                                                <form action="" id="contactForm">
+                                                    <h2 style="color: black;">Send Message</h2>
+                                                    <div class="alert">Your message was sent</div>
+                                                    <div class="inputBox" style="border-bottom: 2px solid black;background-color: transparent; color: black;">
+                                                        <input type="text" name="" required="'required" id="name" style="color: black;">
+                                                        <span style="color: #a8a8a8;">Full Name</span>
+                                                    </div>
+                                                    <div class="inputBox" style="border-bottom: 2px solid black;background-color: transparent; color: black;">
+                                                        <input type="text" name="" required="'required" id="email" style="color: black;">
+                                                        <span style="color: #a8a8a8;">Email Address</span>
+                                                    </div>
+                                                    <div class="inputBox" style="border-bottom: 2px solid black;background-color: transparent; color: black;">
+                                                        <textarea name="" id="message" cols="30" rows="5" required="'required" style="color: black;"></textarea>
+                                                        <span style="color: #a8a8a8;">Type Your Message...</span>
+                                                    </div>
+                                                    <div class="">
+                                                        <input type="submit" name="" value="Send" style=" width: 100px;padding: 10px 0;margin-top: 10px;
+                                                        background-color: transparent;
+                                                        transition: 0.6s;
+                                                        color: black;
+                                                        border: 1px solid black; 
+                                                        cursor: pointer;">
+                                                    </div>
+                                                </form>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#faq" class="plain">FAQ</a></li>
+                            <li><a href="#features" class="plain">Features</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="button button--calypso"><span>Download</span></button>
+                    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                    
+                </div>
+                
+            </nav>
+        </header>
+
+        <section class="home" id="index">
+            <h1>Simplify Your Business</h1>
+            <h1>Management with TallyApp</h1>
+            <div class="sizedbox"></div>
+            <p>Effortlessly track your sales, manage inventory, monitor expenses, and analyze your business performance</p>
+            <p>all in one intuitive app designed specifically for sole traders and small business owners.</p>
+            <div class="sizedbox"></div>
+            <div class="sizedbox"></div>
+            <button class="button button--calypso" style="padding: 20px 50px;"><span>Get Started For Free →</span></button>            
+        </section>
+
+        <section class="show">
+            <div class="main-img reveal">
+                <img src="images/Group 5.png" class="overlay-img left">
+                <img src="images/Group 6.png" class="overlay-img right">
+            </div>
+        </section>
+        
+        
+        <section class="about-app" id="about">
+            <div class="row">
+                <div class="showcase"></div>
+                <div class="column">
+                    <p class="reveal">ABOUT APP ⇲</p>
+                    <div class="sizedbox"></div>
+                    <h1 class="reveal">Stay Organized</h1>
+                    <h1 class="reveal">and Increase</h1>
+                    <h1 class="reveal">Productivity</h1>
+                    <p class="reveal">TallyApp is an all-in-one business management tool designed to simplify the daily operations of sole traders and small businesses. Whether you’re tracking sales, managing inventory, or keeping an eye on expenses, TallyApp empowers you with the tools you need to stay organized, save time, and grow your business.</p>
+                    <div class="sizedbox"></div>
+                    <button class="button button--calypso reveal" style="padding: 20px 50px;"><span>Try For Free →</span></button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="features reveal" id="features">
+            <p class="heading reveal">F E A T U R E S</p>
+            <div class="sizedbox"></div>
+            <h1 class="sub-head reveal">
+                With TallyApp, you've got everything you need to keep up with your tasks, stay organized, and tackle your day like a pro—it’s your all-in-one helper for getting stuff done!
+            </h1>
+            
+            <div class="row reveal">
+                <button class="button button--skoll left" style="background: #fff;width: 50px;height: 50px;margin: 0;">
+                    <span><span><i class="fa-solid fa-arrow-left"></i></span></span>
+                </button>
+                <button class="button button--skoll right" style="background: #fff;width: 50px;height: 50px;margin: 0">
+                    <span><span><i class="fa-solid fa-arrow-right"></i></span></span>
+                </button>
+            </div>
+        
+        
+            <div class="card-content">
+                <div class="card reveal">
+                    <h1>Collaboration with Team</h1>
+                    <p>Work seamlessly with your team, assign tasks, and communicate easily with our messaging system.</p>
+                </div>
+                <div class="card reveal">
+                    <h1>Smart Inventory Management</h1>
+                    <p>Track stock levels, receive low-stock alerts, and prevent overstocking with automated reports.</p>
+                </div>
+                <div class="card reveal">
+                    <h1>Sales & Expense Tracking</h1>
+                    <p>Record sales and expenses in real-time, keeping your finances organized and up-to-date.</p>
+                </div>
+                <div class="card reveal">
+                    <h1>Detailed Analytics</h1>
+                    <p>Get insights into your business performance with interactive reports and visual charts.</p>
+                </div>
+                <div class="card reveal">
+                    <h1>Secure Multi-User Access</h1>
+                    <p>Grant role-based access to your team while keeping critical business data secure.</p>
+                </div>
+                <div class="card reveal">
+                    <h1>Cloud Synchronization</h1>
+                    <p>Access your data from anywhere and sync it across multiple devices seamlessly.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="faq" id="faq">
+            <div class="column">
+                <div class="column reveal">
+                    <h1>Frequently Asked Questions</h1> 
+                    <h2>Here are some of Frequently Asked Questions from registered End-User’s</h2>
+                </div>
+                <div class="accd-grid">
+                    <div class="first-acc"> 
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="first">
+                                <label for="first">What is TallyApp?</label>
+                                <div class="content">
+                                    <p>
+                                        TallyApp is a business management tool designed for sole traders and small businesses to track sales, manage inventory, handle expenses, and analyze performance all in one app.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="second">
+                                <label for="second"> Is my data safe with TallyApp?</label>
+                                <div class="content">
+                                    <p>
+                                        Yes, your data is protected with advanced encryption and stored securely. We prioritize your privacy and do not share your data with third parties.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="third">
+                                <label for="third">Can I use TallyApp on multiple devices?</label>
+                                <div class="content">
+                                    <p>
+                                        Yes, TallyApp supports multi-device access. Your data syncs seamlessly across all your devices, so you can manage your business anytime, anywhere.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="fourth">
+                                <label for="fourth">Does TallyApp require an internet connection?</label>
+                                <div class="content">
+                                    <p>
+                                        No, TallyApp works offline. You can record transactions without an internet connection, and the data will sync automatically once you’re back online.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="second-acc">
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="fifth">
+                                <label for="fifth">Can I assign tasks or roles to other users in TallyApp?</label>
+                                <div class="content">
+                                    <p>
+                                        Yes, TallyApp allows admins to add users to their entity and assign specific duties to manage sales, inventory, or other operations securely.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="sixth">
+                                <label for="sixth">How can I try TallyApp?</label>
+                                <div class="content">
+                                    <p>
+                                        You can sign up for a free trial to explore all the features of TallyApp. After the trial, you can choose a pricing plan that suits your needs.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="seventh">
+                                <label for="seventh">What kind of reports can I generate in TallyApp?</label>
+                                <div class="content">
+                                    <p>
+                                        TallyApp provides detailed reports on sales, expenses, inventory, and profit margins, helping you analyze your business performance and make informed decisions.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="eigth">
+                                <label for="eigth">Is there customer support available?</label>
+                                <div class="content">
+                                    <p>
+                                        Yes, we offer 24/7 customer support via email, phone, and live chat to assist you with any questions or issues.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer" id="contact">
+        <div class="row-footer">
+            <div class="clmn-footer">
+                <a class="row" href="https://studio5ive.org" style="text-decoration: none;color: #fff;">
+                    <img src="https://studio5ive.org/images/5logo_white.png" alt="" class="logo2">
+                    <h3 class="text">STUDIO5IVE</h3>
+                </a>    
+                <div class="iconrow">
+                    <button class="button button--skoll" style="background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);"><span style="mix-blend-mode:normal"><span><i class="fa-brands fa-instagram"></i></span></span></button>
+                    <button class="button button--skoll" style="background: #1877F2;"><span style="mix-blend-mode:normal"><span><i class="fa-brands fa-facebook-f"></i></span></span></button>
+                    <button class="button button--skoll" style="background: #fff;"><span><span><i class="fa-brands fa-x-twitter"></i></span></span></button>
+                    <button class="button button--skoll" style="background-color: #0762C8;"><span style="mix-blend-mode:normal"><span><i class="fa-brands fa-linkedin-in"></i></span></span></button>
+                </div>
+            </div>  
+            
+            <div class="contactInfo">
+                <a class="box" href="mailto:info@studio5ive.org">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@studio5ive.org</p>
+                    </div>
+                </a>
+                <a class="box" href="tel:+254706751272">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p class="contact-phone">+16592702766</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="footer__products">                
+                <span class="footer__title">Software</span>
+                <ul class="dropdown__list">
+                    <li><a href="products/software.html#solutions" class="footer__link">Mobile App Development</a></li>
+                    <li><a href="products/software.html#solutions" class="footer__link">Website Development</a></li>
+                    <li><a href="products/software.html#solutions" class="footer__link">Desktop App Development</a></li>
+                    <li><a href="products/software.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+
+                <span class="footer__title">AI</span>
+                <ul class="dropdown__list">
+                    <li><a href="products/ai.html#solutions" class="footer__link">Chatbots</a></li>
+                    <li><a href="products/ai.html#solutions" class="footer__link">Speech Recognition</a></li>
+                    <li><a href="products/ai.html#solutions" class="footer__link">Computer Vision</a></li>
+                    <li><a href="products/ai.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+            </div>
+            <div class="footer__products">                
+                <span class="footer__title">Architecture</span>
+                <ul class="dropdown__list">
+                    <li><a href="products/architecture.html#solutions" class="footer__link">Architectural Design</a></li>
+                    <li><a href="products/architecture.html#solutions" class="footer__link">3D Modeling and Rendering</a></li>
+                    <li><a href="products/architecture.html#solutions" class="footer__link">Interior Design</a></li>
+                    <li><a href="products/architecture.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+
+                <span class="footer__title">Animation</span>
+                <ul class="dropdown__list">
+                    <li><a href="products/animation.html#solutions" class="footer__link">2D Animation</a></li>
+                     <li><a href="products/animation.html#solutions" class="footer__link">3D Animation</a></li>
+                    <li><a href="products/animation.html#solutions" class="footer__link">Music Video</a></li>
+                    <li><a href="products/animation.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+            </div>
+            <div class="footer__products">
+                <span class="footer__title">Video Game</span>
+                <ul class="dropdown__list">
+                    <li><a href="products/game.html#solutions" class="footer__link">PC Games</a></li>
+                    <li><a href="products/game.html#solutions" class="footer__link">Mobile Games</a></li>
+                    <li><a href="products/game.html#solutions" class="footer__link">Concole Games</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row">
+            <p>© 2025 STUDIO5IVE | All Rights Reserved | <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <script src="js/main.js">
+        function toggleCheckbox() {
+            var checkbox = document.getElementById('check');
+            checkbox.checked = !checkbox.checked;
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+        var listItems = document.querySelectorAll('nav.sticky ul li a');
+        listItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                document.getElementById('check').checked = false;
+            });
+        });
+    
+    });
+    </script>  
+</body>
+</html>
