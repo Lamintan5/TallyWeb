@@ -25,6 +25,10 @@
 	overflow: hidden;
 	border-radius: 0.85rem;
 	color: #fff;
+	
+}
+
+.header .button--calypso{
 	display: none;
 }
 
