@@ -16,6 +16,7 @@ html{
     --sec-color: #a8a8a8;
     --cyan-adjacent: #00d1d1;
     --cyan-darken: #008d8d;
+    --back-color: #1b1b1b;
 }
 
 body{
@@ -629,6 +630,117 @@ body{
     transform: translateY(0px);
     opacity: 1;
 }
+
+
+/* DELETE ACCOUNT */
+/* Center the delete container */
+.delete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+/* Delete box styling */
+.delete-box {
+    background: var(--back-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 400px;
+    width: 40%;
+}
+
+/* Icon styling */
+.delete-icon {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.delete-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Warning message */
+.delete-warning {
+    font-size: 14px;
+    color: var(--sec-color);
+    margin-bottom: 10px;
+}
+
+/* Highlighted text */
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+/* Form styling */
+.delete-form .form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.delete-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--sec-color);
+}
+
+.delete-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--sec-color);
+    background-color: var(--back-color);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+.delete-form input:focus {
+    border-color: #ff3b30;
+    outline: none;
+}
+
+/* Delete button */
+.delete-btn {
+    width: 100%;
+    background-color: #ff3b30;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #cc2b24;
+}
+
+/* Cancel text */
+.cancel-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.cancel-text a {
+    color: var(--cyan-adjacent);
+    text-decoration: none;
+}
+
+.cancel-text a:hover {
+    text-decoration: underline;
+}
+
 
 
 @keyframes floatLeft {
