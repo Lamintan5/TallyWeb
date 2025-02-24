@@ -22,25 +22,25 @@
             </nav>
         </header>
 
-        <section class="delete-container">
-            <div class="delete-box">
-                <img src="images/delete.png" alt="Delete Account" class="delete-icon">
-                <h1 class="delete-title">Permanently Delete Your Account</h1>
-                <p class="delete-warning">We're sorry to see you go! Deleting your account will permanently erase all your personal data, including your profile, settings, and history, from our system. This action is <strong>irreversible</strong>, and you will lose access to all TallyApp services associated with your account. To proceed, please confirm your email and password below. If you need assistance, feel free to reach out to our support team before finalizing your decision.</p>
+        <section class="delete-container" style="display: flex;justify-content: center;align-items: center;height: 90vh;">
+            <div class="delete-box" style=" background: var(--back-color);padding: 30px;border-radius: 10px;box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);text-align: center;min-width: 400px;width: 40%;">
+                <img src="images/delete.png" alt="Delete Account" class="delete-icon" style="margin-bottom: 15px;">
+                <h1 class="delete-title" style="font-size: 24px;font-weight: bold;margin-bottom: 5px;">Permanently Delete Your Account</h1>
+                <p class="delete-warning" style=" font-size: 14px;color: var(--sec-color);margin-bottom: 10px;">We're sorry to see you go! Deleting your account will permanently erase all your personal data, including your profile, settings, and history, from our system. This action is <strong>irreversible</strong>, and you will lose access to all TallyApp services associated with your account. To proceed, please confirm your email and password below. If you need assistance, feel free to reach out to our support team before finalizing your decision.</p>
                 
                 <form action="process_delete.php" method="POST" class="delete-form">
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    <div class="form-group" style=" text-align: left; margin-bottom: 15px;">
+                        <label for="email" style="font-weight: 600;display: block;margin-bottom: 5px;color: var(--sec-color);">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email" style="width: 100%;padding: 10px;border: 1px solid var(--sec-color);background-color: var(--back-color);color: #fff;border-radius: 5px;font-size: 16px;transition: 0.3s;">
                     </div>
 
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    <div class="form-group" style="text-align: left;  margin-bottom: 15px;">
+                        <label for="password" style="font-weight: 600;display: block;margin-bottom: 5px;color: var(--sec-color);">Password</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter your password" style="width: 100%;padding: 10px;border: 1px solid var(--sec-color);background-color: var(--back-color);color: #fff;border-radius: 5px;font-size: 16px;transition: 0.3s;">
                     </div>
 
-                    <button type="submit" class="delete-btn">Delete My Account</button>
-                    <p class="cancel-text">Changed your mind? <a href="https://tally.studio5ive.org">Go Back</a></p>
+                    <button type="submit" class="delete-btn" style=" width: 100%;background-color: #ff3b30;color: white;font-size: 18px;padding: 12px;border: none;border-radius: 5px;cursor: pointer;font-weight: bold;transition: 0.3s;">Delete My Account</button>
+                    <p class="cancel-text" style="margin-top: 15px;font-size: 12px;">Changed your mind? <a href="https://tally.studio5ive.org" style=" color: var(--cyan-adjacent);text-decoration: none;">Go Back</a></p>
                 </form>
             </div>
         </section>
