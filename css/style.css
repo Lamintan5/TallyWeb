@@ -632,6 +632,95 @@ body{
 }
 
 
+
+/* PRIVACY POLICY */
+.pbanner{
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.pbanner .row{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+}
+.pbanner u,
+.pbanner a{
+    text-decoration: none;
+    color: white;
+}
+
+.pbanner ul,
+.pbanner ul a{
+    color: var(--sec-color);
+}
+
+.note{
+    width: 800px;
+    position: sticky;
+    top: 65px;
+}
+
+
+.note ul{
+    color: rgb(241, 241, 241);
+}
+.note strong{
+    color: white;
+}
+
+.note ul li a{
+    color: #0166fe;
+}
+
+.note ul li label{
+    cursor: pointer;
+}
+
+.table{
+    width: 30%;
+    height: 500px;
+    position: sticky;
+    top: 65px;
+}
+.pbanner h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: start;
+}
+.pbanner h2{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: start;
+}
+
+.pbanner h3{
+    font-size: 1.3rem;
+}
+
+.pbanner ul{    
+    margin-left: 30px;
+}
+
+
+
+@keyframes fallIn {
+    0% {
+        top: 0%; 
+        opacity: 0; 
+    }
+    100% {
+        top: 50%; 
+        opacity: 1;
+    }
+}
+
+
 @keyframes floatLeft {
     0% { transform: translate(-5px, -5px); }
     50% { transform: translate(5px, 5px); }
@@ -823,7 +912,16 @@ body{
         align-items: center;
         justify-content: center;
     }
-
+    /* PRIVACY */
+    .pbanner{
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .table{
+        display: none;
+    }
     
     /* DOWNLOADS */
     .download{
