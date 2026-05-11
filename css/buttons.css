@@ -28,9 +28,6 @@
 	
 }
 
-.header .button--calypso{
-	display: none;
-}
 
 .button--calypso span {
 	display: block;
@@ -139,4 +136,59 @@
 	.button--calypso{
 		display: flex;
 	}
+}
+
+/* --- Download Button Styles --- */
+.down-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    
+    background: linear-gradient(135deg, #00a6cb 0%, #667eea 100%);
+    color: white;
+    
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.down-btn:hover {
+    background: linear-gradient(135deg, #667eea 0%, #00a6cb 100%);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    transform: translateY(-2px);
+}
+
+/* The Arrow Icon */
+.icon-dl {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.icon-dl::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: translate(0, -50%) rotate(-45deg);
+    transition: transform 0.3s ease;
+}
+
+/* Download Animation on Hover */
+.down-btn:hover .icon-dl::after {
+    transform: translate(5px, -50%) rotate(-45deg);
 }
