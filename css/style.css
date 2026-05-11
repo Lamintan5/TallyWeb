@@ -449,7 +449,8 @@ body{
 
 .download .card {
     min-width: 700px; 
-    height: 180px;
+    min-height: 180px;
+    height: auto;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -935,7 +936,8 @@ body{
 
     .download .card {
         min-width: 80dvw; 
-        height: 180px;
+        min-height: 180px;
+        height: auto;
         background-color: white;
         display: flex;
         flex-direction: row;
