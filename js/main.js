@@ -62,10 +62,12 @@ const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
           nav = document.getElementById(navId)
  
-    toggle.addEventListener('click', () =>{
-        nav.classList.toggle('show-menu')
-        toggle.classList.toggle('show-icon')
-    })
+    if(toggle && nav){
+        toggle.addEventListener('click', () =>{
+            nav.classList.toggle('show-menu')
+            toggle.classList.toggle('show-icon')
+        })
+    }
  }
  
  showMenu('nav-toggle','nav-menu')
@@ -74,13 +76,15 @@ const showMenu = (toggleId, navId) =>{
  const dropdownItems = document.querySelectorAll('.dropdown__item')
   dropdownItems.forEach((item) =>{
      const dropdownButton = item.querySelector('.dropdown__button') 
-      dropdownButton.addEventListener('click', () =>{
-         const showDropdown = document.querySelector('.show-dropdown')
-         toggleItem(item)
-         if(showDropdown && showDropdown!== item){
-             toggleItem(showDropdown)
-         }
-     })
+     if(dropdownButton) {
+         dropdownButton.addEventListener('click', () =>{
+             const showDropdown = document.querySelector('.show-dropdown')
+             toggleItem(item)
+             if(showDropdown && showDropdown!== item){
+                 toggleItem(showDropdown)
+             }
+         })
+     }
  })
  
  const toggleItem = (item) =>{
@@ -119,11 +123,15 @@ const showMenu = (toggleId, navId) =>{
 
     const scrollAmount = 320; // Amount to scroll (equal to card width + gap)
 
-    rightButton.addEventListener("click", () => {
-        cardContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    });
+    if (rightButton && cardContainer) {
+        rightButton.addEventListener("click", () => {
+            cardContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    }
 
-    leftButton.addEventListener("click", () => {
-        cardContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    });
+    if (leftButton && cardContainer) {
+        leftButton.addEventListener("click", () => {
+            cardContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        });
+    }
 });
